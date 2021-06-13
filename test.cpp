@@ -5,7 +5,7 @@ using namespace std;
 class scorecard{
 char batname[11][20];
 int runscored[11];
-char situation[11][11];
+char situation[11][10];
 char mode[11][15];
 char bowlername[11][20];
 float oversplayed[11];

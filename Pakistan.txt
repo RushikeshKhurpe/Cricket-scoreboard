@@ -1,0 +1,16 @@
+
+1.Abdullah Shafique
+2.Babar Azam
+3.Fakhar Zaman
+4.Haris Sohail
+5.Imam-ul-Haq
+6.Sohaib Maqsood
+7.Faheem Ashraf
+8.Mohammad Nawaz
+9.Saud Shakeel
+10.Shadab Khan
+11.Mohammad Rizwan
+12.Sarfaraz Ahmed
+13.Hasan Ali
+14.Mohammad Hasnain
+15.Shaheen Afridi

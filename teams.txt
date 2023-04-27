@@ -1,0 +1,9 @@
+
+1.Australia
+2.England
+3.India
+4.Newzeland
+5.Pakistan
+6.Southafrica
+7.Srilanka
+8.Westindies

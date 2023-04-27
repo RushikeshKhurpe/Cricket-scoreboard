@@ -59,9 +59,9 @@ void Bowler:: Enter_bowler_details(int n,int ob,int mob,int rg,int wt){
                  goto y;
               }}
 
-              cout<<"Bowler not found";for(int b=0;b<4;b++){//sleep_for(milliseconds(500));
+              cout<<"Bowler not found";for(int b=0;b<4;b++){sleep_for(milliseconds(300));
                cout<<".";}
-              // sleep_for(milliseconds(800)); 
+               sleep_for(milliseconds(600)); 
               cout<<"  Please enter bowler details first"<<endl; 
               y:;
 
@@ -76,43 +76,45 @@ void Bowler:: Enter_bowler_details(int n,int ob,int mob,int rg,int wt){
 
           void  Bowler::display(Bowler serial[]){
             cout
-      
-        << setw(15)
+       << left
+        << setw(25)
         << "NAME"
-        
+        << left
         << setw(15)
         << "OVERS"
-        
+        << left        
         << setw(15)
         << "MAIDEN"
-      
+        << left
         << setw(15)
         << "RUNS GIVEN"
-        
+        << left
         << setw(15)
         << "WICKET"
-        
+        << left
         << setw(20)
         << "ECONOMY"
         << endl;
-            for(int i=1;i<3;i++){
+           
+            for(int i=1;i<=5;i++){
                cout
-            
-            << setw(15)
+           << left
+            << setw(25) 
             << serial[i].Name
-            
+            << left
             << setw(15)
             << serial[i].Overs_bowled
-        
+            << left
             << setw(15)
             << serial[i].Maiden_overs_bowled
-            
+            << left
             << setw(15)
             << serial[i].Runs_given
-             
+            << left 
             << setw(15)
             << serial[i].Wickets_taken
-            
+            << left
+            << setprecision(3)
             << setw(20)
             << serial[i].Economy
         

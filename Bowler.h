@@ -6,9 +6,10 @@ using std::string;
 namespace example
 {
     class  Bowler{
-    public:
-        int serial;
+
+        
     private:
+       int serial;
         string Name;
         int Overs_bowled;
         int Maiden_overs_bowled;

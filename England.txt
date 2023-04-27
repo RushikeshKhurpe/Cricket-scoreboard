@@ -6,7 +6,7 @@
 5.Joe Root
 6.Moeen Ali
 7.Jos Buttler
-8.Jonathan Bairstow
+8.Jonathan Bstow
 9.Stuart Broad
 10.Adil Rashid
 11.Jason Roy

@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 #include<fstream>
+#include <iomanip>
 #include"Match.h"
 using std::endl;
 using std::cout;
@@ -21,7 +22,7 @@ namespace example{
 
   while(getline(select_Venue,venue_line)){ if(c== venue_option){ 
     ofstream file(match,ios::app);   venue_line.erase(0,2);
-    file<<"***"<<venue_line<<"***"<<endl;goto x;}else c++; }x:;
+    file<<setw(42)<<"***"<<venue_line<<"***"<<endl<<endl;goto x;}else c++; }x:;
 
     cout<<"**********************************************************************"<<endl;
 }
@@ -47,26 +48,18 @@ if(t==1)  { option=team_1_option;} else{  option=team_2_option;}
       if(c==option){ 
     ofstream file(match,ios::app);  teams_line.erase(0,2);
    
-    if(t==1){file<<"**"<<teams_line;}  if(t==2){file<<" VS "<<teams_line<<"**";}
+    if(t==1){file<<setw(47)<<"**"<<teams_line; team1name=teams_line;} 
+     if(t==2){file<<" VS "<<teams_line<<"**"<<endl<<endl; team2name=teams_line;}
     goto x;}else c++; }x:;
 
         select_squad(teams_line);
 cout<<"**********************************************************************"<<endl; t++;}}
 
 
-string match::set_teamname(int n){
+string match::get_teamname(int n){
 
-  string match="match.txt";   fstream select_name(match,ios::in);  int c=0; string name;
-
-
-  while(getline(select_name,name)){ 
-      if(c==3){select_name.open(match.c_str());
-                             while(select_name>>name){
-                           if(n==1){name.erase(0,2);return name;goto x;} if(n==2){return name;goto x;}}}
-      else c++; }x:;
-      return "";
-}
-
+if(n==1) return team1name;
+else return   team2name;}
 
 
 void match::select_squad(string team){
@@ -84,7 +77,7 @@ void match::select_squad(string team){
     
    cout<<"Select 11 players : "<<endl;
    int player[11];     Squad+=".txt";
-  for(int i=0;i<11;i++){cin>>player[i];
+  for(int i=0;i<11;i++){cin>>player[i]; 
  
   ifstream match_Squad(team,ios::in);  int c=0; 
   
@@ -106,7 +99,7 @@ void match::match_status(void){
 
    while(getline(match_Status,matchstatus_line)){ if(c== match_status_option){ 
     ofstream file(match,ios::app); matchstatus_line.erase(0,2);
-    file<<"******"<<matchstatus_line<<"*****"<<endl;goto x;}else c++; }x:;
+    file<<setw(50)<<"******"<<matchstatus_line<<"*****"<<endl<<endl;goto x;}else c++; }x:;
 
     cout<<"**********************************************************************"<<endl;
 }}

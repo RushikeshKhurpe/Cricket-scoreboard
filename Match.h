@@ -6,20 +6,20 @@ using std::string;
 namespace example
 {
     class match
-{
-  public:  
+{ private:  int venue_option, team_1_option, team_2_option, match_status_option,team_name;
+             string team1name,team2name;
+    
   string match="match.txt", Squad;
-  int venue_option, team_1_option, team_2_option, match_status_option,team_name;
+ 
+   public: void select_venue();
 
-    void select_venue(void);
-
-    void select_teams(void);
+    void select_teams();
         
     void select_squad(string team);
     
-    void match_status(void);
+    void match_status();
 
-    string set_teamname(int u);
+    string get_teamname(int u);
 
 };
 }
